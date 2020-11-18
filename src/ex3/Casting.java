@@ -1,4 +1,4 @@
-package hta_java_01;
+package ex3;
 
 public class Casting {
 
