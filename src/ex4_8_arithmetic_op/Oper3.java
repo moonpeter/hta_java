@@ -30,6 +30,6 @@ public class Oper3 {
 		int f = a / b;
 		System.out.printf("%d / %d = %d",a,b,f);
 
-		sc.close();
+		sc.close();		
 	}
 }
