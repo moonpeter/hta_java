@@ -1,1 +1,0 @@
-package ex4_2_local_variable_init;
