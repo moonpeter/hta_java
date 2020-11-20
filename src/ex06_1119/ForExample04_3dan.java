@@ -12,11 +12,14 @@ public class ForExample04_3dan {
 		for (f = 1; f < 10; f++) {
 			for (s = 2; s < 10; s++) {
 				result = f * s;
-				System.out.printf("%d * %d = %d \t", s, f, result);
+				System.out.printf("%d * %d = %d\t", s, f, result);
 				if (s % 9 == 0) {
-					System.out.println();
+					System.out.println();	
+		
 				}
 			}
 		}
 	}
 }
+
+   	    
