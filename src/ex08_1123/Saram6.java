@@ -8,6 +8,9 @@ public class Saram6 {
 
     Saram6(String name, int w, int ki, int age) {
         this.name = name;
+        this.w = w;
+        this.ki = ki;
+        this.age = age;
     }
 
     public void eat() {
