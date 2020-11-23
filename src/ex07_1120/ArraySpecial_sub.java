@@ -38,14 +38,13 @@ public class ArraySpecial_sub {
 		}
 		System.out.print("\t" + "총점" + "\t" + "평균" + "\n");
 
-		// 강호동
+		// 학생별 점수 프린트
 		for (int t = 0; t < student.length; t++) {
 			System.out.print(name[t] + "\t");
 			for (int i = 0; i < score[t].length; i++) {
 				System.out.print(score[t][i] + "\t");
 			}
-			System.out.print(student[t] + "\t");
-			System.out.print(student_avg[t] + "\t");
+			System.out.print(student[t] + "\t" + student_avg[t] + "\t");
 			System.out.println();
 		}
 		

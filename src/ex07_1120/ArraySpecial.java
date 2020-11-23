@@ -12,7 +12,7 @@ public class ArraySpecial {
 		};
 		int[] subject = new int[3]; // 과목 총점을 저장
 		int[] student = new int[5]; // 학생의 총점을 저장
-		int[] student_avg = new int[5]; // 학생의 총점을 저장
+		int[] student_avg = new int[5]; // 학생의 평균을 저장
 
 //		System.out.println("=========학생 총합=========");
 		for (int i = 0; i < score.length; i++) {
@@ -38,50 +38,15 @@ public class ArraySpecial {
 		}
 		System.out.print("\t" + "총점" + "\t" + "평균" + "\n");
 
-		// 강호동
-		System.out.print(name[0] + "\t");
-		for (int i = 0; i < score[0].length; i++) {
-			System.out.print(score[0][i] + "\t");
+		// 학생별 점수 프린트
+		for (int t = 0; t < student.length; t++) {
+			System.out.print(name[t] + "\t");
+			for (int i = 0; i < score[t].length; i++) {
+				System.out.print(score[t][i] + "\t");
+			}
+			System.out.print(student[t] + "\t" + student_avg[t] + "\t");
+			System.out.println();
 		}
-		System.out.print(student[0] + "\t");
-		System.out.print(student_avg[0] + "\t");
-		System.out.println();
-
-		// 이승기
-		System.out.print(name[1] + "\t");
-		for (int i = 0; i < score[1].length; i++) {
-			System.out.print(score[1][i] + "\t");
-		}
-		System.out.print(student[1] + "\t");
-		System.out.print(student_avg[1] + "\t");
-		System.out.println();
-
-		// 유재석
-		System.out.print(name[2] + "\t");
-		for (int i = 0; i < score[2].length; i++) {
-			System.out.print(score[2][i] + "\t");
-		}
-		System.out.print(student[2] + "\t");
-		System.out.print(student_avg[2] + "\t");
-		System.out.println();
-
-		// 하하
-		System.out.print(name[3] + "\t");
-		for (int i = 0; i < score[3].length; i++) {
-			System.out.print(score[3][i] + "\t");
-		}
-		System.out.print(student[3] + "\t");
-		System.out.print(student_avg[3] + "\t");
-		System.out.println();
-
-		// 이광
-		System.out.print(name[4] + "\t");
-		for (int i = 0; i < score[4].length; i++) {
-			System.out.print(score[4][i] + "\t");
-		}
-		System.out.print(student[4] + "\t");
-		System.out.print(student_avg[4] + "\t");
-		System.out.println();
 		
 		System.out.println("===========================================");
 		
