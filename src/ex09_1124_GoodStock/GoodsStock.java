@@ -1,9 +1,13 @@
 package ex09_1124_GoodStock;
 
-public class GoodStock {
+public class GoodsStock {
 
-    String goodsCode;
-    int stockNum;
+    String goodsCode;       // 상품 코드
+    int stockNum;           // 재고 수량
+
+
+    GoodsStock() {
+    }
 
     public void addStock(int input_num) {
         stockNum += input_num;
