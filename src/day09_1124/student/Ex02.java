@@ -36,15 +36,18 @@ public class Ex02 {
     }
 
     static void sort(Student2[] students) {
-        int min = 0;
-
+        int indexMin, tmp;
+        Student2 temp;
         for(int i=0; i<students.length -1; i++) {
+            indexMin = i;
             for(int j=i+1; j<students.length; j++) {
-                if(students[i] > students[j]){
-                    min = students[j];
-                    students[j] = students[i];
+                if(students[j].getTotal() > students[indexMin].getTotal()){
+                    indexMin = j;
                 }
             }
+            temp = students[indexMin];
+            students[indexMin] = students[i];
+            students[i] = temp;
         }
     }
 }
