@@ -10,8 +10,8 @@ public class Accumulator {
     }
 
     static int getGrandTotal() {
-        total = 5;
-        accumulate(100);
+//        total = 5;
+//        accumulate(100);
         return grandTotal;
     }
 }
