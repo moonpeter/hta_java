@@ -17,7 +17,7 @@ public class Account {
     }
 
     //final 키워드를 이용한 메소드 오버라이딩 금지
-    final int withdraw(int amount) throws Exception {
+    int withdraw(int amount) throws Exception {
         if (balance < amount) {
             throw new Exception("잔액이 부족합니다.");
         }

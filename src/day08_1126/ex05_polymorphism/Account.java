@@ -1,6 +1,6 @@
-package day08_1126.ex03_abstract_class;
+package day08_1126.ex05_polymorphism;
 
-class Account {
+public class Account {
 
     String accountNo;
     String ownerName;
