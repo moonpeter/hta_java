@@ -1,9 +1,9 @@
-package day08_1126.ex05_polymorphism;
+package day08_1126.ex14;
 
 public class CheckingAccount extends Account {
     String cardNo;
 
-    public CheckingAccount(String accountNo, String ownerName, int balance, String cardNo) {
+    CheckingAccount(String accountNo, String ownerName, int balance, String cardNo) {
         super(accountNo, ownerName, balance);
         this.cardNo = cardNo;           // 클래스 안에 선언된 필드 초기화
     }
