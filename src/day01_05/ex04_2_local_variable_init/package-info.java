@@ -1,0 +1,1 @@
+package day01_05.ex04_2_local_variable_init;
