@@ -3,7 +3,7 @@ package day08_1126.ex09_Interface;
 public class Rectangle implements Transformable{
     int x, y, width, height;
 
-    Rectangle(int x, int y, int width, int height){
+    public Rectangle(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
         this.width = width;

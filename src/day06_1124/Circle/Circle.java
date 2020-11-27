@@ -3,7 +3,7 @@ package day06_1124.Circle;
 public class Circle {
     double radius;
 
-    Circle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
