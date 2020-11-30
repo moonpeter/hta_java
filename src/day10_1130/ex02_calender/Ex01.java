@@ -14,6 +14,7 @@ public class Ex01 {
         System.out.println(today.get(Calendar.DATE));
         System.out.println(today.get(Calendar.DAY_OF_MONTH));
         System.out.println(today.get(Calendar.DAY_OF_YEAR));
+        System.out.println("==================");
         System.out.println(today.get(Calendar.DAY_OF_WEEK)); // 1:일요일
         System.out.println(today.get(Calendar.DAY_OF_WEEK_IN_MONTH));
         System.out.println(today.get(Calendar.AM_PM));
