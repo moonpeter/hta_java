@@ -8,6 +8,7 @@ public class Ex04 {
 
         while (stok.hasMoreElements()) {
             System.out.println(stok.nextToken());
+            System.out.println(stok);
         }
     }
 }
