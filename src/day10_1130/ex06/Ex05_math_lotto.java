@@ -1,6 +1,6 @@
 package day10_1130.ex06;
 
-public class Ex05_math {
+public class Ex05_math_lotto {
     public static void main(String[] args) {
         int[] num = make();
         sortAsc(num);
