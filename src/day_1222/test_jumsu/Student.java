@@ -1,10 +1,10 @@
-package day_1222.ex04_student;
+package day_1222.test_jumsu;
 
 public class Student {
     private String name;
     private int  kor, eng,  math;
     private static int korTotal, engTotal, mathTotal;
-    Student(String name,int kor, int eng, int math){
+    Student(String name, int kor, int eng, int math){
         this.name = name;
         this.kor = kor;
         this.eng = eng;
@@ -15,7 +15,7 @@ public class Student {
         mathTotal += math;
     }
 
-    public int getTotal() {
+    int getTotal() {
         return kor + eng + math;
     }
 
