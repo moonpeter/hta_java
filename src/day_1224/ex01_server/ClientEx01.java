@@ -1,7 +1,6 @@
-package day_1223.ex06_server;
+package day_1224.ex01_server;
 
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 
 public class ClientEx01 {
@@ -11,14 +10,17 @@ public class ClientEx01 {
         try {
 //            socket = new Socket("127.0.0.1", 9000);
             socket = new Socket("192.168.0.24", 9000);
-            InputStream in = socket.getInputStream();
-            OutputStream out = socket.getOutputStream();
 
-            String str = "Hello, Server";
-            out.write(str.getBytes());
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(socket.getInputStream()));
+            PrintWriter writer = new PrintWriter(socket.getOutputStream());
 
-            byte arr[] = new byte[128];
-            System.out.println(new String(arr));
+            writer.println("Hello, Server2");
+            writer.flush();
+
+            String str = reader.readLine();
+            System.out.println(str);
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
