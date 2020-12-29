@@ -1,9 +1,9 @@
-package day_1228.ex02;
+package day_1228.ex05;
 
 import java.util.Date;
 
-public class Emp extends day_1228.ex05.Emp {
-    public boolean toString;
+public class Emp {
+    public String toString;
     private int empno;
     private String ename;
     private String job;
@@ -13,9 +13,6 @@ public class Emp extends day_1228.ex05.Emp {
     private int comm;
     private int deptno;
 
-    public Emp() {
-
-    }
 
     public int getEmpno() {
         return empno;
@@ -83,7 +80,7 @@ public class Emp extends day_1228.ex05.Emp {
 
     @Override
     public String toString() {
-        return String.format("%-8s%-8s%-16s\t%-16s%s\t%s\t%s\t",
+        return String.format("%-8s%-8s%-16s%s\t%-16s%s%s\t%s\t%s\t",
                 empno, ename, job, mgr, hiredate, sal, comm, deptno);
     }
 }

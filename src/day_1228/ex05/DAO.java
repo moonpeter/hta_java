@@ -1,29 +1,46 @@
-package day_1228.ex02;
+package day_1228.ex05;
 
 import java.sql.*;
 import java.util.ArrayList;
 
 public class DAO {
-    public ArrayList<Emp> selectAll() {
+    public ArrayList<Emp> search(String[] searchs) {
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
-        ArrayList<Emp> list = null;
+        String sql = "select * from emp";
+        String field[] = { "empno", "ename", "job", "mgr", "hiredate", "sal", "comm", "deptno"};
 
+        for (int i=0; i<searchs.length; i++) {
+            if(searchs[i] != null) {
+                String single = "";
+                if (i == 1 || i ==2 || i == 4) {
+                    single ="'";
+                }
+                if (sql.contains("where"))
+                    sql += " and ";
+                else
+                    sql += " where ";
+
+                sql += field[i] + "=" +  single + searchs[i] + single;
+            }
+        }
+
+        System.out.println(sql.toString());
+
+        ArrayList<Emp> list = null;
         try {
             String driver = "oracle.jdbc.driver.OracleDriver";
             Class.forName(driver);
             String url = "jdbc:oracle:thin:@localhost:1521:xe";
             conn = DriverManager.getConnection(url, "scott", "TIGER");
             stmt = conn.createStatement();
-
-            String sql_query ="select * from emp";
-            rs = stmt.executeQuery(sql_query);
+            rs = stmt.executeQuery(sql);
 
             int i=0;
             while (rs.next()){
                 if(i++ ==0){
-                    list = new ArrayList<Emp>();
+                    list = new ArrayList<>();
                 }
                 Emp st = new Emp();
                 st.setEmpno(rs.getInt(1));

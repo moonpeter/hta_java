@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/src/day_1224_JDBC/select/JDBC_Ex01.java" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/day_1224_JDBC/select/JDBC_Ex02.java" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/day_1228/ex01/goodsinfo.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/day_1228/ex05/DAO.java" dialect="GenericSQL" />
   </component>
 </project>
