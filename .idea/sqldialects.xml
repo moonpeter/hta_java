@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/day_1228/ex01/goodsinfo.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/day_1228/ex05/DAO.java" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/day_1229/ex01_preparedStatement/test.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/day_1229/ex04/hakjum.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/day_1229/ex04_test/hakjum.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/day_1230_board/board.sql" dialect="GenericSQL" />
   </component>
 </project>

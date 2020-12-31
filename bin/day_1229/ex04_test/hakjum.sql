@@ -1,4 +1,4 @@
-drop table hakjum purge;
+drop table hakjum cascade constraints;
 
 create table hakjum(
     lowccore    number(3),
@@ -25,6 +25,7 @@ values (90, 94.99, 'A0');
 insert into hakjum
 values (95, 100, 'A+');
 
+delete from HAKJUM;
 select * from hakjum;
 
 drop table student purge;
@@ -39,6 +40,19 @@ create table student(
     GRADE          VARCHAR2(3) references hakjum(GRADE)
 );
 
+
 create sequence student_seq
     start with 1
     increment by 1;
+
+select grade from hakjum
+where 90 between lowccore and hiscore;
+
+insert into student
+(no, name, kor, eng, math, tot, avg, grade)
+values(student_seq.nextval, '자바', 100, 100, 100, 300, 100,
+       (select grade from hakjum where 90 between lowccore and hiscore));
+
+update student set name='re_test', kor=90, math=90, eng=90, tot=90, avg=90, grade=90
+where no=2;
+select * from student;

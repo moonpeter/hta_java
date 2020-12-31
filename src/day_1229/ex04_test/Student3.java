@@ -1,4 +1,4 @@
-package day_1229.ex04;
+package day_1229.ex04_test;
 
 public class Student3 {
     private int no;
@@ -13,7 +13,7 @@ public class Student3 {
     public Student3() {
 
     }
-    public Student3(String name, int kor, int math,int  eng) {
+    public Student3(String name, int kor, int math, int eng) {
         this.name =name;
         this.kor =kor;
         this.math = math;
@@ -84,5 +84,10 @@ public class Student3 {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    public String toString() {
+        return no + "\t\t" + name + "\t" +kor + "\t" +math + "\t"
+                +eng + "\t" +tot + "\t" +avg + "\t" +grade;
     }
 }
