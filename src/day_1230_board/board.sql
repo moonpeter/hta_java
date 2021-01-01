@@ -28,6 +28,10 @@ values(board_seq.nextval, 'admin', '1', 'JSP 공부는 재미있어요', '열심
 
 select * from board;
 
-select * from
-(select rownum rnum, board_num, board_name, board_subject, board_content, board_file, board_re_ref, board_re_lev, board_re_seq, board_readcount, board_date from
-(select * from board order by board_re_ref desc, board_re_seq asc));
+create table b_test
+as select * from board;
+
+select * from b_test;
+
+delete from b_test
+where BOARD_NUM = 14;

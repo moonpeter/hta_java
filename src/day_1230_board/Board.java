@@ -115,8 +115,8 @@ public class Board {
     }
 
     public String toString() {
-        return BOARD_NUM + "\t" + BOARD_NAME + "\t" + BOARD_SUBJECT + "\t"
-                + BOARD_CONTENT + "\t" + BOARD_RE_REF + "\t" + BOARD_RE_LEV
+        return BOARD_NUM + "\t\t" + BOARD_NAME + "\t\t" + BOARD_SUBJECT + "\t\t\t"
+                + BOARD_CONTENT + "\t\t\t" + BOARD_RE_REF + "\t" + BOARD_RE_LEV
                 + "\t" + BOARD_RE_SEQ  + "\t" + BOARD_DATE;
     }
 }
